@@ -14,7 +14,7 @@ int main() {
     unsigned capacity = 4096;
     while (capacity != 35389440) {
         unsigned* array = new unsigned[capacity];
-        for (unsigned i = 0; i < capacity; i++) {
+        for (unsigned i = 0; i < capacity; ++i) {
             array[i] = std::rand() % 3;
         }
         sum_straight_detour(array, capacity);
