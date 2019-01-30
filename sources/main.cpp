@@ -31,7 +31,7 @@ int main() {
         file << std::endl;
         delete[] array;
         unsigned* array1 = new unsigned[capacity];
-        for (unsigned i = 0; i < capacity; i++) {
+        for (unsigned i = 0; i < capacity; ++i) {
             array1[i] = std::rand() % 3;
         }
         sum_reverse_detour(array1, capacity);
